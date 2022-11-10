@@ -23,7 +23,7 @@ if($cur_path=='' || $cur_path=='index.php'){
 }elseif($cur_path=='coupon_code.php' || $cur_path=='manage_coupon_code.php'){
 	$page_title='Manage Coupon Code';
 }elseif($cur_path=='dish.php' || $cur_path=='manage_dish.php'){
-	$page_title='Manage Dish';
+	$page_title='Manage List';
 }elseif($cur_path=='banner.php' || $cur_path=='manage_banner.php'){
 	$page_title='Manage Banner';
 }elseif($cur_path=='contact_us.php'){

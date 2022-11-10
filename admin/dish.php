@@ -46,7 +46,7 @@ $res=mysqli_query($con,$sql);
 						<tr>
                             <td><?php echo $i?></td>
                             <td><?php echo $row['category']?></td>
-							<td><?php echo $row['dish']?> (<?php echo strtoupper($row['type'])?>)</td>
+							<td><?php echo $row['dish']?> <!-- (<?php echo strtoupper($row['type'])?>) --></td>
 							<td><a target="_blank" href="<?php echo SITE_DISH_IMAGE.$row['image']?>"><img src="<?php echo SITE_DISH_IMAGE.$row['image']?>"/></a></td>
 							<td>
 							<?php 

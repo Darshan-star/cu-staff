@@ -42,7 +42,7 @@ include ("header.php");
             <p>
               Mail Us your query we'll revert you as soon as possible.
             </p>
-            <a style="border:solid #007bff 2px; border-radius: 10px; padding:4px" href="mailto:#" class="get-started-btn">Mail Us</a>
+            <a style="border:solid #007bff 2px; border-radius: 10px; padding:4px" href="mailto:studentcare@cumail.in" class="get-started-btn">Mail Us</a>
     </div>
   </div>
 </div>

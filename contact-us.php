@@ -185,6 +185,7 @@ input[type=submit]:hover {
 
  
 <div class="row">
+  <div class="cont"></div>
   <div class="cont">
     <a href="https://www.linkedin.com/in/darshan-yadav-9496b0201/" target="_blank"> <img src="assets/img/PHOTO.jpg" alt="Darshan" class="image">
     <div class="overlay">
@@ -206,21 +207,21 @@ input[type=submit]:hover {
            <P style="background-color:Black; Color:white; text-align:center; padding-up:20px; pandding-down:20px"> Contact on Instagram </p></a> 
   </div> </a>
   <div class="cont">
-    <a href="https://www.instagram.com/prisha1463/"><img src="assets/img/1.jpg" alt="-" class="image">
+    <a href="https://www.instagram.com/vb4031347/" target="_blank"><img src="assets/img/vaibhav.jpg" alt="vaibhav" class="image">
     <div class="overlay">
     <div class="text">
-            <h2>-</h2>
-        <p class="title">Editor</p></div>
+            <h2>Vaibhav</h2>
+        <p class="title">Editor or Content helper</p></div>
     </div> 
      <a href="#" style="font-family: Bold; color: Red">
            <P style="background-color:Black; Color:white; text-align:center; padding-up:20px; pandding-down:20px"> Contact on Instagram </p></a>
   </div> </a>
-  <div class="cont">
+  <!-- <div class="cont">
     <a href="#"><img src="assets/img/1.jpg" alt="-" class="image">
     <div class="overlay">
     <div class="text">
-            <h2>-</h2>
-        <p class="title">Content Provider</p></div>
+            <h2>Kirat Kaur</h2>
+        <p class="title">Project Superviser</p></div>
     </div> 
      <a href="#" style="font-family: Bold; color: Red">
            <P style="background-color:Black; Color:white; text-align:center; padding-up:20px; pandding-down:20px"> Contact on Instagram </p></a>
@@ -229,12 +230,12 @@ input[type=submit]:hover {
     <a href="#"><img src="assets/img/1.jpg" alt="-" class="image">
     <div class="overlay">
     <div class="text">
-            <h2>-</h2>
-        <p class="title">Content Provider</p></div>
+            <h2>Chitra Sharma</h2>
+        <p class="title">Project Co-Superviser</p></div>
     </div> 
     <a href="#" style="font-family: Bold; color: Red">
           <P style="background-color:Black; Color:white; text-align:center; padding-up:20px; pandding-down:20px"> Contact on LinkedIn </p></a>
-  </div></a>
+  </div></a> -->
 </div>
  
 

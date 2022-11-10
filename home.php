@@ -42,6 +42,14 @@ $arrType=array("eng","non-eng","all");
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/animate01.css">
+
+<link rel="stylesheet" type="text/css" href="product card popup/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- custom js file link  -->
+   <script src="product card popup/js/script.js" defer></script>
+
+
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 <!--
@@ -125,26 +133,7 @@ $arrType=array("eng","non-eng","all");
 <div class="animt">
 <h2 data-text="&nbsp;CU FACULTIES ! &nbps;">&nbsp;CU FACULTIES !&nbsp;</h2>
 </div>
-<!-- <div class="row">
-<div class="box1" class="column">
-    
-    <a href="department.php"><img src="./media/block-wize.webp"></a>
-    <br>
-    <h2>Block</h2>
-</div>
-<div class="box1" class="column">
-     <h2>02</h2> 
-    <a href="block.php"><img src="./assets/img/PHOTO.jpg"></a>
-</div>
-<div class="box1" class="column">
-     <h2>02</h2> 
-    <a href="section.php"><img src="./assets/img/PHOTO.jpg"></a>
-</div>
-<div class="box1" class="column">
-     <h2>02</h2> 
-    <a href="all.php"><img src="./assets/img/PHOTO.jpg"></a>
-</div>
-</div> -->
+ 
 
 
          <div class="shop-page-area pt-100 pb-100">
@@ -201,12 +190,14 @@ $arrType=array("eng","non-eng","all");
                                         <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
                                             <div class="product-wrapper">
                                                 <div class="product-img">
-                                                    <a href="javascript:void(0)">
+                                                    <a href="<?php echo FRONT_SITE_PATH.$product_row['id'] ?>", target="_blank">
                                                         <img src="<?php echo SITE_DISH_IMAGE.$product_row['image']?>" alt=""; width='200px'; height='250px'>
                                                     </a>
+
                                                 </div>
                                                 <div class="product-content" id="dish_detail">
                                                     <h4>
+                                            
 														<?php
 														if($product_row['type']=='Engineering Dept.'){
 															echo "<img src='assets/img/icon-img/eng.jpg'/>";
@@ -215,11 +206,17 @@ $arrType=array("eng","non-eng","all");
 														}
 														?>
 														
-														<a href="javascript:void(0)"><?php echo $product_row['dish'];
+														<a href="quick_view.php?pid=<?= $fetch_product['id']; ?>"><?php echo $product_row['dish'];
 														getRatingByDishId($product_row['id']);
+                                                        ?>
+                                                        </a>
+                                                        <br>
+                                                        <a href="javascript:void(0)"><?php echo $product_row['dish_detail']; getRatingByDishId($product_row['id']); 
 														?> 
-														
+											
 														</a>
+                                                         
+                                                    
                                                     </h4>
 													<?php
 													$dish_attr_res=mysqli_query($con,"select * from dish_details where status='1' and dish_id='".$product_row['id']."' order by price asc");
@@ -230,16 +227,16 @@ $arrType=array("eng","non-eng","all");
 															if($website_close==0){
 															echo "<input type='radio' class='dish_radio' name='radio_".$product_row['id']."' id='radio_".$product_row['id']."' value='".$dish_attr_row['id']."'/>";
 															}
-															echo $dish_attr_row['attribute'];
-															echo "&nbsp;";
+															// echo $dish_attr_row['attribute'];
+															// echo "&nbsp;";
 															// echo "<span class='price'>(".$dish_attr_row['price'].")</span>";
 															// $added_msg="";
 															// if(array_key_exists($dish_attr_row['id'],$cartArr)){
 															// 	$added_qty=getUserFullCart($dish_attr_row['id']);
 															// 	$added_msg="(Added -$added_qty)";
 															// }
-															echo " <span class='cart_already_added' id='shop_added_msg_".$dish_attr_row['id']."'>".$added_msg."</span>";
-                                                            echo "<span class='cart_already_added' id='faculties_detail_".$dish_attr_row['id']."'>".$dish_detail."</span>";
+															// echo " <span class='cart_already_added' id='shop_added_msg_".$dish_attr_row['id']."'>".$added_msg."</span>";
+               //                                              echo "<span class='cart_already_added' id='faculties_detail_".$dish_attr_row['id']."'>".$dish_detail."</span>";
 															echo "&nbsp;&nbsp;&nbsp;";
 														}
 														?>
@@ -250,18 +247,18 @@ $arrType=array("eng","non-eng","all");
 														<select class="select" id="qty<?php echo $product_row['id']?>">
 															<option value="0">Qty</option>
 															<?php
-															for($i=1;$i<=20;$i++){
-																echo "<option>$i</option>";
-															}
+															// for($i=1;$i<=20;$i++){
+															// 	echo "<option>$i</option>";
+															// }
 															?>
 														</select>
 														<i class="fa fa-cart-plus cart_icon" aria-hidden="true" onclick="add_to_cart('<?php echo $product_row['id']?>','add')"></i>
 													</div> -->
 													<?php } else{
 														?>
-														<div class="product-price-wrapper">
+														<!-- <div class="product-price-wrapper">
 														<strong><?php echo $website_close_msg?>
-														</strong></div>
+														</strong></div> -->
 														<?php
 													}
 													?>
@@ -286,7 +283,7 @@ $arrType=array("eng","non-eng","all");
                                 <h4 class="shop-sidebar-title">Search By Categories</h4>
 								<div class="shop-catigory">
 									<ul id="faq" class="category_list">
-										<li><a href="<?php echo FRONT_SITE_PATH?>shop"><u>clear</u></a></li>
+										<li><a href="<?php echo FRONT_SITE_PATH?>home"><u>clear</u></a></li>
                                         <?php 
                                         while($cat_row=mysqli_fetch_assoc($cat_res)){
                                             $class="selected";
@@ -316,7 +313,8 @@ $arrType=array("eng","non-eng","all");
 			<input type="hidden" name="search_str" id="search_str" value='<?php echo $search_str?>'/>
 			
 		</form> 
-<br>		
+<br>
+
  
 <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-36184fa3-c078-4c01-bcf4-74832464ea9e"></div> -->
