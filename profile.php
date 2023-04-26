@@ -1,15 +1,15 @@
 <?php
 include ("header.php");
 if(!isset($_SESSION['FOOD_USER_ID'])){
-	redirect(FRONT_SITE_PATH.'home');
-}
-$getUserDetails=getUserDetailsByid();
+	redirect(FRONT_SITE_PATH.'home'); 
+} 
+$getUserDetails=getUserDetailsByid(); 
 ?>
 
 <div class="myaccount-area pb-80 pt-100">
             <div class="container">
                 <div class="row">
-				
+				 
                     <div class="ml-auto mr-auto col-lg-9">
 						<div>
 							<h4>Referral Code: <?php echo $getUserDetails['referral_code']?></h4><br/>
@@ -23,7 +23,7 @@ $getUserDetails=getUserDetailsByid();
                                         <h5 class="panel-title"><span>1</span> <a data-toggle="collapse" data-parent="#faq" href="#my-account-1">Edit your account information </a></h5>
                                     </div>
                                     <div id="my-account-1" class="panel-collapse collapse show">
-                                        <div class="panel-body">
+                                        <div class="panel-body"> 
                                             <form method="post" id="frmProfile">
 												<div class="billing-information-wrapper">
 													<div class="account-info-wrapper">
@@ -101,7 +101,7 @@ $getUserDetails=getUserDetailsByid();
 															<button type="submit" id="password_submit">Save</button>
 														</div>
 													</div>
-													<input type="hidden" name="type" value="password">
+													<input type="hidden" name="type" value="password"> 
 													<div id="password_form_msg"></div>
 												</div>
 												 
@@ -113,7 +113,7 @@ $getUserDetails=getUserDetailsByid();
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
 
