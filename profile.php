@@ -14,7 +14,7 @@ $getUserDetails=getUserDetailsByid();
 						<div>
 							<h4>Referral Code: <?php echo $getUserDetails['referral_code']?></h4><br/>
 							<h4>Referral Link: <?php echo FRONT_SITE_PATH?>login_register?referral_code=<?php echo $getUserDetails['referral_code']?></h4><br/>
-							
+							 
 						</div>
                         <div class="checkout-wrapper">
                             <div id="faq" class="panel-group">
@@ -27,7 +27,7 @@ $getUserDetails=getUserDetailsByid();
                                             <form method="post" id="frmProfile">
 												<div class="billing-information-wrapper">
 													<div class="account-info-wrapper">
-														<h4>My Account Information</h4>
+										 				<h4>My Account Information</h4>
 														<h5>Your Personal Details</h5>
 													</div>
 													<div class="row">
@@ -49,7 +49,7 @@ $getUserDetails=getUserDetailsByid();
 																<input type="email" readonly="readonly" value="<?php echo $getUserDetails['email']?>">
 															</div>
 														</div>
-														
+														 
 													</div>
 													<div class="billing-back-btn">
 														<div class="billing-back">
@@ -68,12 +68,12 @@ $getUserDetails=getUserDetailsByid();
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                    <div class="panel-heading"> 
                                         <h5 class="panel-title"><span>2</span> <a data-toggle="collapse" data-parent="#faq" href="#my-account-2">Change your password </a></h5>
                                     </div>
                                     <div id="my-account-2" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <form method="post" id="frmPassword">
+                                            <form method="post" id="frmPassword"> 
 												<div class="billing-information-wrapper">
 													<div class="account-info-wrapper">
 														<h4>Change Password</h4>
@@ -92,7 +92,7 @@ $getUserDetails=getUserDetailsByid();
 																<input type="password" name="new_password" required>
 															</div>
 														</div>
-													</div>
+													</div> 
 													<div class="billing-back-btn">
 														<div class="billing-back">
 															<a href="#"><i class="ion-arrow-up-c"></i> back</a>
@@ -104,9 +104,9 @@ $getUserDetails=getUserDetailsByid();
 													<input type="hidden" name="type" value="password">
 													<div id="password_form_msg"></div>
 												</div>
-												
+												 
 											</form>
-                                        </div>
+                                        </div> 
                                     </div>
                                 </div>
                                 
@@ -118,5 +118,5 @@ $getUserDetails=getUserDetailsByid();
         </div>
 
 <?php
-include("footer.php");
+include("footer.php"); 
 ?>
